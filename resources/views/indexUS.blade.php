@@ -49,7 +49,7 @@
     <div id="spinner"
         class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
         <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
-            <span class="sr-only">Cargando...</span>
+            <span class="sr-only">Loading...</span>
         </div>
     </div>
     <!-- Spinner End -->
@@ -91,7 +91,7 @@
 
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
-        <a href="{{ route('indexES') }}" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+        <a href="{{ route('indexUS') }}" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
             <h4 class="m-0 text-primary text-titulo"><img src="{{ asset('img/LogoSotelo.svg') }}" style="width: 50px;"
                     alt=""> Sotelo Tellez Transportation </h4>
             {{-- <h2 class="m-0 text-primary"><img src="{{ asset('img/LogoSotelo.svg') }}" style="width: 50px;" alt=""> <i class="fa fa-car me-3"></i>CarServ</h2> --}}
@@ -101,11 +101,11 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto p-4 p-lg-0">
-                <a href="#home" class="nav-item nav-link active">Inicio</a>
-                <a href="#about" class="nav-item nav-link">Nosotros</a>
-                <a href="#services" class="nav-item nav-link">Servicios</a>
-                {{-- <a href="{{ route('indexES') }}" class="nav-item nav-link"><img src="{{ asset('img/MEXICO.png') }}" alt="ES" style="width: 20px;"></a> --}}
-                <a href="{{ route('indexUS') }}" class="nav-item nav-link"><img src="{{ asset('img/USA.png') }}" alt="EN" style="width: 20px; padding: 1px; margin: 1px;"></a>
+                <a href="#home" class="nav-item nav-link active">Home</a>
+                <a href="#about" class="nav-item nav-link">About</a>
+                <a href="#services" class="nav-item nav-link">Services</a>
+                <a href="{{ route('indexES') }}" class="nav-item nav-link"><img src="{{ asset('img/MEXICO.png') }}" alt="ES" style="width: 20px;"></a>
+                {{-- <a href="#services" class="nav-item nav-link"><img src="{{ asset('img/USA.png') }}" alt="EN" style="width: 20px; padding: 1px; margin: 1px;"></a> --}}
                 {{-- <div class="nav-item dropdown d-none">
                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
                     <div class="dropdown-menu fade-up m-0">
@@ -117,11 +117,9 @@
                 </div> --}}
                 {{-- <a href="#contact" class="nav-item nav-link">Contact</a> --}}
             </div>
-            {{-- <a href="#contact" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Contact, Get A Quote<i
-                    class="fa fa-arrow-right ms-3"></i></a> --}}
-            <a href="#contact" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Contáctenos, obtenga una cotización<i
-                class="fa fa-arrow-right ms-3"></i></a>
-</div>
+            <a href="#contact" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Contact, Get A Quote<i
+                    class="fa fa-arrow-right ms-3"></i></a>
+        </div>
     </nav>
     <!-- Navbar End -->
 
@@ -137,19 +135,19 @@
                         <div class="container">
                             <div class="row align-items-center justify-content-center justify-content-lg-start">
                                 <div class="col-10 col-lg-7 text-center text-lg-start">
-                                    <h6 class="text-white text-uppercase mb-3 animated slideInDown">// Servicio de camiones
+                                    <h6 class="text-white text-uppercase mb-3 animated slideInDown">// Truck Servicing
                                         //</h6>
                                     <h1  class="display-3 text-white mb-4 pb-3 animated slideInDown" ><i
                                             class="fas fa-truck-moving"></i> <i class="fad fa-truck-container"></i>
-                                            Soluciones Eficientes para el Transporte de la Construcción</h1>
+                                        Efficient Solutions for Construction Transport</h1>
                                     
                                         <!-- Escrito como codigo -->
                                     <div class="mb-4 pb-3 ">    
                                         <h3 class="typed-text-output d-inline texto_degradado_azul_rojo  animated slideInDown"></h3>
-                                        <div class="typed-text d-none ">BIENVENIDO, "SOTELO TELLEZ TRANSPORTES" está para ayudarte., SERVICIO DE TRANSPORTE Y RENTA DE CAMIONES.</div>
+                                        <div class="typed-text d-none ">WELCOME, "SOTELO TELLEZ TRANSPORTATION" is here to help you., TRANSPORTATION AND TRUCK RENTAL SERVICE.</div>
                                         
                                     </div>
-                                    <a href="#contact" class="btn btn-primary py-3 px-5 animated slideInDown">Contacto<i class="fa fa-arrow-right ms-3"></i></a>
+                                    <a href="#contact" class="btn btn-primary py-3 px-5 animated slideInDown">Contact<i class="fa fa-arrow-right ms-3"></i></a>
                                 </div>
                                 <div class="palladax col-lg-5 d-none d-lg-flex  wow zoomIn"
                                 data-wow-delay="0.6s">
@@ -203,9 +201,8 @@
                     <div class="d-flex py-5 px-4">
                         <i class="fa fa-certificate fa-3x text-primary flex-shrink-0"></i>
                         <div class="ps-4">
-                            <h5 class="mb-3">Servicio de calidad</h5>
-                            {{-- <p>Trucks in motion, with maintenance at every moment!</p> --}}
-                            <p>Camiones en movimiento, con mantenimiento en cada momento!</p>
+                            <h5 class="mb-3">Quality Servicing</h5>
+                            <p>Trucks in motion, with maintenance at every moment</p>
                             {{-- <a class="text-secondary border-bottom" href="">Read More</a> --}}
                         </div>
                     </div>
@@ -214,9 +211,9 @@
                     <div class="d-flex bg-light py-5 px-4">
                         <i class="fa fa-users-cog fa-3x text-primary flex-shrink-0"></i>
                         <div class="ps-4">
-                            <h5 class="mb-3">Trabajadores expertos</h5>
-                            {{-- <p>Material transportation with skilled professionals. Trust in our expertise!</p> --}}
-                            <p>Transporte de materiales con expertos capacitados ¡Confía en nuestra experiencia!</p>
+                            <h5 class="mb-3">Expert Workers</h5>
+                            <p>Material transportation with skilled professionals. Trust in our expertise!</p>
+                            {{-- <p>Transporte de materiales con expertos capacitados ¡Confía en nuestra experiencia!</p> --}}
                             {{-- <a class="text-secondary border-bottom" href="">Read More</a> --}}
                         </div>
                     </div>
@@ -225,9 +222,9 @@
                     <div class="d-flex py-5 px-4">
                         <i class="fa fa-tools fa-3x text-primary flex-shrink-0"></i>
                         <div class="ps-4">
-                            <h5 class="mb-3">Equipo moderno</h5>
-                            {{-- <p>Reliable trucks, powered by consistent maintenance!</p> --}}
-                            <p>¡Camiones confiables, impulsados por un mantenimiento constante!</p>
+                            <h5 class="mb-3">Modern Equipment</h5>
+                            <p>Reliable trucks, powered by consistent maintenance!</p>
+                            {{-- <p>¡Camiones confiables, impulsados por un mantenimiento constante!</p> --}}
                             {{-- <a class="text-secondary border-bottom" href="">Read More</a> --}}
                         </div>
                     </div>
@@ -254,11 +251,11 @@
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <h6 class="text-primary text-uppercase">// Sobre Nosotros //</h6>
-                    <h1 class="mb-4"><span class="text-primary wow fadeInUp" data-wow-delay="0.5s">Sotelo Tellez transportation Corp, </span>
-                        Renta de camión para el transporte de materiales.</h1>
+                    <h6 class="text-primary text-uppercase">// About Us //</h6>
+                    <h1 class="mb-4"><span class="text-primary wow fadeInUp" data-wow-delay="0.5s">Sotelo Tellez transportation Corp, </span> Truck
+                        rental for material transportation.</h1>
                     {{-- <h1 class="mb-4"><span class="text-primary">Sotelo Tellez transportation Corp,</span> Renta de camión para el transporte de materiales.</h1> --}}
-                    {{-- <p class="mb-4">
+                    <p class="mb-4">
                         We specialize in the transportation of construction materials and offer a wide range of
                         products, including sand, stone, gravel, and many others.
                         Our company is dedicated to providing reliable and high-quality transportation services, backed
@@ -266,13 +263,13 @@
                         Whether you need materials delivered to your construction site or you're looking to purchase
                         products for your projects, you can trust in our expertise and commitment.
                         Contact us today and discover how we can help you build with success!
-                    </p> --}}
-                    <p class="mb-4">
+                    </p>
+                    {{-- <p class="mb-4">
                         Transportamos materiales de construcción y ofrecemos una amplia variedad de productos como arena, piedra, grava y muchos otros. 
                         Nuestra compañía está dedicada a brindar servicios de transporte confiables y de alta calidad, respaldados por personal altamente capacitado. 
                         Ya sea que necesites entregar materiales a tu obra o adquirir productos para tus proyectos, puedes confiar en nuestra experiencia y compromiso. 
                         ¡Contáctanos hoy mismo y descubre cómo podemos ayudarte a construir con éxito!
-                    </p>
+                    </p> --}}
 
                     
                     <div class="row g-4 mb-3 pb-3 d-none">
@@ -318,9 +315,9 @@
                 
                 <div class="col-12">
                     <div class="py-5">
-                        <h1 class="mb-4 wow fadeInUp" data-wow-delay="0.5s">Obsjetivo</h1>
+                        <h1 class="mb-4 wow fadeInUp" data-wow-delay="0.5s">Objective</h1>
                         {{-- <h1 class="text-white mb-4">Solicitar una cotización de servicio</h1> --}}
-                        <p class="mb-0">
+                        {{-- <p class="mb-0">
                             Nuestro objetivo principal es proporcionar a nuestros clientes un servicio de renta de
                             transporte de materiales y
                             venta de materiales de construcción que supere sus expectativas en términos de calidad,
@@ -328,13 +325,13 @@
                             Nos esforzamos por ser reconocidos como el referente en nuestra industria, ofreciendo una
                             amplia gama de productos y
                             servicios de alta calidad que se ajusten a las necesidades específicas de cada cliente.
-                        </p>
-                        {{-- <p class="mb-0">
+                        </p> --}}
+                        <p class="mb-0">
                             Our main objective is to provide our customers with the highest quality material transportation rental services and construction material sales. 
                             We strive to be recognized as leaders in the market, known for our professionalism, reliability, and excellent customer service.
                             <br>
                             We aim to establish long-lasting and mutually beneficial relationships with our customers by offering them personalized solutions tailored to their specific needs. 
-                        </p> --}}
+                        </p>
                     </div>
                 </div>
             </div>
@@ -358,11 +355,11 @@
     <div class="container-xxl service py-5" id="services">
         <div class="container">
             <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-                <h6 class="text-primary text-uppercase">// Servicios //</h6>
-                <h1 class="mb-3">Explora Nuestros Servicios</h1>
+                <h6 class="text-primary text-uppercase">// Our Services //</h6>
+                <h1 class="mb-3">Explore Our Services</h1>
                 <h5 class="text-uppercase mb-5">
-                    {{-- RENT AND SERVICES ALL TEXAS --}}
-                    Renta y Servicios todo Texas
+                    RENT AND SERVICES ALL TEXAS
+                    {{-- Renta y Servicios todo Texas --}}
                 </h5>
             </div>
             <div class="row g-4 wow fadeInUp" data-wow-delay="0.3s">
@@ -372,15 +369,15 @@
                             data-bs-toggle="pill" data-bs-target="#tab-pane-1" type="button">
                             {{-- <i class="fa fa-car-side fa-2x me-3"></i> --}}
                             <i class="fa-solid fa-truck-front fa-2x me-3"></i>
-                            {{-- <h4 class="m-0">Truck rental services.</h4> --}}
-                            <h4 class="m-0">Renta de camiones.</h4>
+                            <h4 class="m-0">Truck rental services.</h4>
+                            {{-- <h4 class="m-0">Renta de camiones.</h4> --}}
                         </button>
                         <button class="nav-link w-100 d-flex align-items-center text-start p-4 mb-4"
                             data-bs-toggle="pill" data-bs-target="#tab-pane-2" type="button">
                             {{-- <i class="fa fa-car fa-2x me-3"></i> --}}
                             <i class="fa-solid fa-handshake fa-2x me-3"></i>
-                            {{-- <h4 class="m-0">Sale of construction materials.</h4> --}}
-                            <h4 class="m-0">Venta de materiales de construcción.</h4>
+                            <h4 class="m-0">Sale of construction materials.</h4>
+                            {{-- <h4 class="m-0">Venta de materiales de construcción.</h4> --}}
                         </button>
                     </div>
                 </div>
@@ -397,9 +394,9 @@
                                     </div>
                                 </div>
                                 <div class="col-md-6">
-                                    <h3 class="mb-3 wow fadeInUp" data-wow-delay="0.5s">Servicios Sotelo Tellez a tu Alcance.</h3>
+                                    <h3 class="mb-3 wow fadeInUp" data-wow-delay="0.5s">Sotelo Tellez Services at your service.</h3>
                                     {{-- <h3 class="mb-3">Servicios Sotelo Tellez a tu servicio</h3> --}}
-                                    {{-- <p class="mb-4">We offer a specialized truck rental service for the
+                                    <p class="mb-4">We offer a specialized truck rental service for the
                                         transportation of construction materials.
                                         Our trucks are designed to provide maximum efficiency and safety in the
                                         transport of all types of materials,
@@ -414,8 +411,8 @@
                                         and high-quality service to ensure your materials reach their destination safely
                                         and efficiently.
                                         Trust us to meet your construction material transportation needs exceptionally.
-                                    </p> --}}
-                                    <P class="mb-4">
+                                    </p>
+                                    {{-- <P class="mb-4">
                                         Ofrecemos un servicio de renta de camiones especializado en el transporte de materiales de construcción. 
                                         Nuestros camiones están diseñados para brindar la máxima eficiencia y seguridad en el traslado de todo tipo de materiales, 
                                         desde arena y piedra hasta grava y otros productos esenciales para tus proyectos. 
@@ -425,10 +422,10 @@
                                         camiones es la solución confiable que necesitas. Nos enorgullece ofrecer un servicio puntual, 
                                         confiable y de calidad, para que tus materiales lleguen a su destino de manera segura y eficiente. 
                                         Confía en nosotros para satisfacer tus necesidades de transporte de materiales de construcción de manera excepcional.
-                                    </P>
-                                    <p><i class="fa fa-check text-success me-3 wow fadeInUp" data-wow-delay="0.5s"></i>Servicio de calidad</p>
-                                    <p><i class="fa fa-check text-success me-3 wow fadeInUp" data-wow-delay="0.5s"></i>Trabajadores expertos</p>
-                                    <p><i class="fa fa-check text-success me-3 wow fadeInUp" data-wow-delay="0.5s"></i>Equipo moderno</p>
+                                    </P> --}}
+                                    <p><i class="fa fa-check text-success me-3 wow fadeInUp" data-wow-delay="0.5s"></i>Quality Servicing</p>
+                                    <p><i class="fa fa-check text-success me-3 wow fadeInUp" data-wow-delay="0.5s"></i>Expert Workers</p>
+                                    <p><i class="fa fa-check text-success me-3 wow fadeInUp" data-wow-delay="0.5s"></i>Modern Equipment</p>
                                     {{-- <a href="" class="btn btn-primary py-3 px-5 mt-3">Read More<i class="fa fa-arrow-right ms-3"></i></a> --}}
                                 </div>
                             </div>
@@ -445,16 +442,15 @@
                                 </div>
                                 
                                 <div class="col-md-6">
-                                    <h3 class="mb-3 wow fadeInUp" data-wow-delay="0.5s">Venta de materiales para construcción.</h3>
+                                    <h3 class="mb-3 wow fadeInUp" data-wow-delay="0.5s">Sale of construction materials.</h3>
                                     <p class="mb-4">
-                                        ¡Descubre nuestra amplia variedad de materiales para construcción y mejora tu proyecto! En nuestra empresa, 
-                                        ofrecemos servicios de venta de materiales como arena, grava y piedra de diferentes tipos, 
-                                        con entrega a domicilio en todo Texas. 
+                                        Discover our wide range of construction materials and enhance your project! At our company, 
+                                        we offer sales services for materials such as sand, gravel, and various types of stone, with home delivery across Texas. 
                                         <br>
-                                        Ya sea que estés trabajando en una obra grande o pequeña, 
-                                        estamos aquí para brindarte los materiales que necesitas de manera conveniente y confiable. 
+                                        Whether you're working on a large-scale construction project or a small DIY endeavor, 
+                                        we are here to provide you with the materials you need conveniently and reliably. 
                                         <br>
-                                        Contáctanos hoy mismo para solicitar tu pedido y dejar que nuestros expertos te ayuden a construir tus sueños en cada entrega.
+                                        Contact us today to place your order and let our experts help you build your dreams with every delivery.
                                     </p>
                                 </div>
                             </div>
@@ -473,22 +469,22 @@
             <div class="row gx-5">
                 <div class="col-lg-6 py-5">
                     <div class="py-5">
-                        <h1 class="text-white mb-4 wow fadeInUp" data-wow-delay="0.5s">Solicitar una cotización de servicio</h1>
+                        <h1 class="text-white mb-4 wow fadeInUp" data-wow-delay="0.5s">Requesting a Service Quote</h1>
                         {{-- <h1 class="text-white mb-4">Solicitar una cotización de servicio</h1> --}}
                         <p class="text-white mb-0 wow fadeInUp" data-wow-delay="0.5s">
-                            ¡Contáctanos para solicitar un estimado!
+                            Request Your Estimate!
                             {{-- ¡Contáctanos para solicitar un estimado! --}}
 
                             <br>
-                            {{-- If you are looking for material transportation rental services or construction material
+                            If you are looking for material transportation rental services or construction material
                             sales,
                             we are here to assist you. At Sotelo Tellez Transportation, we specialize in providing
-                            reliable and efficient solutions for your construction needs. --}}
+                            reliable and efficient solutions for your construction needs.
 
 
-                            Si estás buscando servicios de renta de transporte de materiales o venta de materiales de construcción, 
+                            {{-- Si estás buscando servicios de renta de transporte de materiales o venta de materiales de construcción, 
                             estaremos encantados de ayudarte. En Sotelo Tellez Transportation, nos especializamos en proporcionar soluciones confiables y 
-                            eficientes para tus necesidades de construcción.
+                            eficientes para tus necesidades de construcción. --}}
 
 
                         </p>
@@ -498,20 +494,20 @@
                     <div class="w-100 g-5 row mt-2 text-white">
                         <div class="col-lg-12 col-md-12 col-sm-12 text-center wow fadeInUp" data-wow-delay="0.1s">
                             
-                            <h4 class="text-white mb-4">Dirección</h4>
+                            <h4 class="text-white mb-4">Address</h4>
                             <p class="mb-2"><i class="fa fa-map-marker-alt me-3 text-danger"></i>Heritage office suites, 1000 Heritage
                                 Center Circle, Round Rock TX 78664</p>
         
                         </div>
         
                         <div class="col-lg-6 col-md-6 col-sm-12">
-                            <h4 class="text-white mb-4">Contactos</h4>
+                            <h4 class="text-white mb-4">Contacts</h4>
                             <p class="mb-2"><i class="fa fa-phone-alt me-3 text-danger"></i>+1 737-343-2462</p>
                             <p class="mb-2"><i class="fa fa-envelope me-3 text-danger"></i>sotelotelleztransp@gmail.com</p>
                         </div>
                         <div class="col-lg-6 col-md-6 col-sm-12">
-                            <h4 class="text-white mb-4">Hora de atención</h4>
-                            <h6 class="text-white">Lunes - Sabado:</h6>
+                            <h4 class="text-white mb-4">Opening Hours</h4>
+                            <h6 class="text-white">Monday - Saturday:</h6>
                             <p class="mb-4">8:00 am - 17:00 pm</p>
                         </div>
                     </div>
@@ -536,27 +532,27 @@
                                 </div>
                                 <div class="col-12 col-sm-6">
                                     <input type="text" class="form-control border-0 d-none" name="PAGEES" placeholder="id"
-                                        style="height: 55px;" value="0">
-                                    <input type="text" class="form-control border-0" name="name" placeholder="Nombre Completo"
+                                        style="height: 55px;" value="1">
+                                    <input type="text" class="form-control border-0" name="name" placeholder="Your Name"
                                         style="height: 55px;">
                                 </div>
                                 <div class="col-12 col-sm-6">
-                                    <input type="email" class="form-control border-0" name="email" placeholder="Correo Electrónico"
+                                    <input type="email" class="form-control border-0" name="email" placeholder="Your Email"
                                         style="height: 55px;">
                                 </div>
                                 <div class="col-12 col-sm-6">
-                                    <input type="tel" class="form-control border-0" name="phone" placeholder="Numero de Telefono"
+                                    <input type="tel" class="form-control border-0" name="phone" placeholder="Phone Number"
                                         style="height: 55px;">
                                 </div>
                                 <div class="col-12 col-sm-6">
-                                    <input type="text" class="form-control border-0" name="subject" placeholder="Asunto"
+                                    <input type="text" class="form-control border-0" name="subject" placeholder="Subject"
                                         style="height: 55px;">
                                 </div>
                                 <div class="col-12">
-                                    <textarea class="form-control border-0" name="message" placeholder="Descripción"></textarea>
+                                    <textarea class="form-control border-0" name="message" placeholder="Description"></textarea>
                                 </div>
                                 <div class="col-12">
-                                    <button class="btn btn-secondary w-100 py-3" type="submit">Enviar</button>
+                                    <button class="btn btn-secondary w-100 py-3" type="submit">Send</button>
                                 </div>
                             </div>
                         </form>
@@ -576,11 +572,11 @@
                             style="object-fit: cover; width: 100%;" alt="">
             </div>
             <div class="col-md-6 col-sm-12 text-center mt-5 p-5 mr-5">
-                <h1 class="mb-4"><span class="text-secondary wow fadeInUp" data-wow-delay="0.5s">"Construyendo el éxito juntos: ¡su socio confiable en transporte de materiales y alquiler de camiones de carga!"</h1>
+                <h1 class="mb-4"><span class="text-secondary wow fadeInUp" data-wow-delay="0.5s">"Building Success Together: Your Reliable Partner in Material Transportation and Cargo Truck Rental"</h1>
                     {{-- <h1 class="mb-4"><span class="text-secondary">"Truck rental for material transportatio"</h1> --}}
                 {{-- <h1 class="mb-4"><span class="text-primary">Sotelo Tellez transportation Corp,</span> Renta de camión para el transporte de materiales.</h1> --}}
                 
-                {{-- <p class="mb-4 p-4 pt-5">
+                <p class="mb-4 p-4 pt-5">
                     We invite you to take advantage of our services and experience excellence in material transportation! At our company, 
                     our trucks are specifically adapted for heavy loads, 
                     providing increased safety and efficiency on every journey. 
@@ -588,15 +584,15 @@
                     Our 2-axle trucks are the perfect solution for your transportation needs. 
                     <br>
                     Don't miss the opportunity to work with the best! Contact us today and discover how we can streamline your construction projects.
-                </p> --}}
-                <p class="mb-4 p-4 pt-5">
+                </p>
+                {{-- <p class="mb-4 p-4 pt-5">
                     ¡Te invitamos a aprovechar nuestros servicios y descubrir la excelencia en transporte de materiales! En nuestra empresa, 
                     nuestros camiones están especialmente adaptados para cargas pesadas, brindando mayor seguridad y eficiencia en cada trayecto. 
                     <br>
                     Nuestros camiones de 2 ejes son la solución perfecta para tus necesidades de transporte. 
                     <br>
                     ¡No pierdas la oportunidad de trabajar con los mejores! Contáctanos hoy mismo y descubre cómo podemos facilitar tus proyectos de construcción.
-                </p>
+                </p> --}}
             </div>
         </div>
 
@@ -608,20 +604,20 @@
         <div class="container py-5">
             <div class="row g-5">
                 <div class="col-lg-3 col-md-6">
-                    <h4 class="text-light mb-4">Dirección</h4>
+                    <h4 class="text-light mb-4">Address</h4>
                     <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Heritage office suites, 1000 Heritage
                         Center Circle, Round Rock TX 78664</p>
 
                 </div>
 
                 <div class="col-lg-3 col-md-6">
-                    <h4 class="text-light mb-4">Contactos</h4>
+                    <h4 class="text-light mb-4">Contacts</h4>
                     <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+1 737-343-2462</p>
                     <p class="mb-2"><i class="fa fa-envelope me-3"></i>sotelotelleztransp@gmail.com</p>
                 </div>
                 <div class="col-lg-3 col-md-6">
-                    <h4 class="text-light mb-4">Hora de atención</h4>
-                    <h6 class="text-light">Lunes - Sabado:</h6>
+                    <h4 class="text-light mb-4">Opening Hours</h4>
+                    <h6 class="text-light">Monday - Saturday:</h6>
                     <p class="mb-4">8:00 am - 5:00 pm</p>
                 </div>
             </div>
